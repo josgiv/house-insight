@@ -1,0 +1,988 @@
+.background1 {
+    width: 1920px;
+    height: 4100px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .line-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    right: 0;
+    bottom: -0.4px;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .home {
+    text-decoration: none;
+    height: 0.8px;
+    width: 79px;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 3;
+  }
+  .house-value {
+    height: 0.9px;
+    width: 143px;
+    flex-shrink: 0;
+  }
+  .about-us,
+  .house-value,
+  .power-usage {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    z-index: 3;
+  }
+  .power-usage {
+    height: 0.9px;
+    flex: 1;
+    min-width: 107px;
+  }
+  .about-us {
+    height: 0.8px;
+    width: 118px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .home-parent {
+    margin-right: -2px;
+    width: 595px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 997.7px;
+    box-sizing: border-box;
+    gap: 28px;
+    max-width: 100%;
+    font-size: 24px;
+    color: #1f1f1f;
+    font-family: Jost;
+  }
+  .house-value1 {
+    width: 152px;
+    position: relative;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-platform-use {
+    align-self: stretch;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    line-height: 150%;
+    font-family: Jost;
+    color: #4d5053;
+  }
+  .sub-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .go-here {
+    flex: 1;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 186%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 73px;
+  }
+  .action-button-icons {
+    height: 13px;
+    width: 20px;
+    position: relative;
+  }
+  .button {
+    width: 124px;
+    border-radius: 11px;
+    background-color: #cda274;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+    gap: 20px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #161719;
+    font-family: Jost;
+  }
+  .button,
+  .div,
+  .power-usage1 {
+    display: flex;
+    align-items: center;
+  }
+  .div {
+    width: 358px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 52px;
+    max-width: 100%;
+  }
+  .power-usage1 {
+    width: 152px;
+    position: relative;
+    line-height: 125%;
+    justify-content: center;
+  }
+  .our-energy-usage {
+    align-self: stretch;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    line-height: 150%;
+    font-family: Jost;
+    color: #4d5053;
+  }
+  .sub-content1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .go-here1 {
+    flex: 1;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 186%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 73px;
+  }
+  .vector-icon {
+    height: 13px;
+    width: 20px;
+    position: relative;
+  }
+  .button1 {
+    width: 124px;
+    border-radius: 11px;
+    background-color: #cda274;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+    gap: 20px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #161719;
+    font-family: Jost;
+  }
+  .div1,
+  .work,
+  .work-wrapper {
+    display: flex;
+    max-width: 100%;
+  }
+  .div1 {
+    width: 358px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+  }
+  .work,
+  .work-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .work {
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 152px;
+    gap: 20px;
+    z-index: 2;
+  }
+  .work-wrapper {
+    align-self: stretch;
+    justify-content: flex-start;
+    padding: 0 21px;
+  }
+  .of-stylish-living,
+  .stylishly,
+  .we-create-the {
+    margin: 0;
+  }
+  .we-create-the-container {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.98px;
+    line-height: 125%;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .houseinsights-is-here {
+    align-self: stretch;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    line-height: 150%;
+    font-family: Jost;
+    color: #4d5053;
+  }
+  .content,
+  .sub-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .sub-content2 {
+    align-self: stretch;
+    gap: 33px;
+  }
+  .content {
+    width: 472px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    min-width: 472px;
+  }
+  .image-icon {
+    height: 700px;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    min-width: 424px;
+  }
+  .about-us1,
+  .frame-group {
+    align-self: stretch;
+    display: flex;
+    max-width: 100%;
+  }
+  .about-us1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    z-index: 3;
+    text-align: left;
+    font-size: 50px;
+  }
+  .frame-group {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 226px;
+  }
+  .read-our-articles {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    line-height: 63px;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .sub-title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .go-here2 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 125%;
+    font-weight: 600;
+    font-family: Jost;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 74px;
+  }
+  .contact-link-icon {
+    height: 13.2px;
+    width: 15.1px;
+    position: relative;
+  }
+  .button2,
+  .contact1,
+  .content1 {
+    display: flex;
+    align-items: center;
+  }
+  .contact1 {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 32px;
+    gap: 10px;
+  }
+  .button2,
+  .content1 {
+    flex-direction: column;
+  }
+  .button2 {
+    cursor: pointer;
+    border: 0;
+    padding: 26px 37px;
+    background-color: #cda274;
+    box-shadow: 0 10px 20px #1f2022;
+    border-radius: 18px;
+    justify-content: center;
+  }
+  .content1 {
+    width: 569px;
+    justify-content: flex-start;
+    gap: 32px;
+    max-width: 100%;
+  }
+  .contact,
+  .contact-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .contact {
+    flex: 1;
+    border-radius: 70px;
+    background-color: #292f36;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 26.3px 20px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .contact-wrapper {
+    width: 1179px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 60px;
+    font-size: 50px;
+    color: #fff;
+  }
+  .frame-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 279px;
+    max-width: 100%;
+  }
+  .logo-icon {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    z-index: 3;
+  }
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px 0 0;
+  }
+  .houseinsight {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 125%;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 3;
+  }
+  .frame-parent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 80px 0 0;
+    box-sizing: border-box;
+    gap: 10px;
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .pages {
+    position: relative;
+    line-height: 125%;
+    display: inline-block;
+    min-width: 64px;
+    z-index: 3;
+  }
+  .about,
+  .contact-us,
+  .home1,
+  .house-value2,
+  .power-usage2 {
+    margin: 0;
+  }
+  .home-house-value-container {
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    line-height: 300%;
+    font-family: Jost;
+    color: #4d5053;
+    z-index: 3;
+  }
+  .pages-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 9px;
+  }
+  .contact2 {
+    position: relative;
+    line-height: 125%;
+    display: inline-block;
+    min-width: 87px;
+    z-index: 3;
+  }
+  .blank-line,
+  .jakarta-utara-14430,
+  .jl-lodan-raya,
+  .kampus-ancol,
+  .p {
+    margin: 0;
+  }
+  .kampus-ancol-jl-container {
+    align-self: stretch;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    line-height: 212%;
+    text-transform: capitalize;
+    font-family: Jost;
+    color: #4d5053;
+    z-index: 3;
+  }
+  .contact-parent,
+  .frame-div {
+    display: flex;
+    align-items: flex-start;
+  }
+  .contact-parent {
+    width: 261px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 26px;
+  }
+  .frame-div {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .copyright-interno {
+    position: relative;
+    letter-spacing: 0.01em;
+    line-height: 150%;
+    z-index: 3;
+  }
+  .copyright-interno-designed-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px 0 99px;
+    text-align: left;
+    font-size: 22px;
+    color: #4d5053;
+    font-family: Jost;
+  }
+  .frame-container,
+  .frame-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-container {
+    width: 1121px;
+    flex-direction: column;
+    gap: 174px;
+  }
+  .frame-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .houseinsight1 {
+    margin: 0 !important;
+    position: absolute;
+    top: 47px;
+    left: -24px;
+    font-size: 40px;
+    line-height: 125%;
+    font-weight: 400;
+    font-family: inherit;
+    text-align: left;
+    z-index: 3;
+  }
+  .line-parent {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 55px 0 32px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 357.4px;
+    max-width: 100%;
+  }
+  .background-inner {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #292f36;
+    font-family: "DM Serif Display";
+  }
+  .image-icon1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .sub-content3,
+  .we-help-to {
+    align-self: stretch;
+    display: flex;
+  }
+  .we-help-to {
+    margin: 0;
+    height: 278px;
+    position: relative;
+    font-size: inherit;
+    line-height: 125%;
+    font-weight: 400;
+    font-family: inherit;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .sub-content3 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .get-started1 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 23px;
+    font-weight: 600;
+    font-family: Jost;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 98px;
+    white-space: nowrap;
+  }
+  .hero-link-icon {
+    height: 13.2px;
+    width: 15.1px;
+    position: relative;
+  }
+  .button3,
+  .get-started {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .get-started {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .button3 {
+    cursor: pointer;
+    border: 0;
+    padding: 26px 48px;
+    background-color: #292f36;
+    box-shadow: 0 10px 20px rgba(192, 192, 192, 0.35);
+    border-radius: 18px;
+    flex-direction: column;
+  }
+  .banner,
+  .intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .intro {
+    width: 963px;
+    flex-direction: column;
+    gap: 21px;
+    z-index: 1;
+  }
+  .banner {
+    width: 100%;
+    margin: 0 !important;
+    position: absolute;
+    top: 139px;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    padding: 239px 125px;
+    box-sizing: border-box;
+    min-height: 1042px;
+    z-index: 3;
+    text-align: left;
+    font-size: 85px;
+    color: #292f36;
+    font-family: "DM Serif Display";
+  }
+  .contact-us1 {
+    text-decoration: none;
+    width: 118px;
+    height: 0.8px;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+    min-width: 118px;
+    z-index: 3;
+    margin-top: -3985px;
+  }
+  .logo-icon1 {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    margin: 0 !important;
+    top: 54px;
+    left: 291px;
+    z-index: 3;
+  }
+  .background,
+  .frame-child {
+    align-self: stretch;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .background {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 212px 60px;
+    min-height: 4100px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #1f1f1f;
+    font-family: Jost;
+  }
+  .frame-child {
+    width: 1921px;
+    border-top: 1px solid #e5e5e5;
+    max-width: 101%;
+    flex-shrink: 0;
+    z-index: 3;
+  }
+  .homepage-2,
+  .homepage-2-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .homepage-2-inner {
+    align-self: stretch;
+    height: 1px;
+    flex-direction: row;
+    padding: 0 0 0 10px;
+    max-width: 100%;
+    margin-top: -165px;
+  }
+  .homepage-2 {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    padding: 0 0 104px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1500px) {
+    .work {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1225px) {
+    .home-parent,
+    .work {
+      box-sizing: border-box;
+    }
+    .home-parent {
+      padding-bottom: 649px;
+    }
+    .work {
+      padding-left: 76px;
+      padding-right: 76px;
+    }
+    .content {
+      flex: 1;
+    }
+    .content,
+    .image-icon {
+      min-width: 100%;
+    }
+    .about-us1 {
+      flex-wrap: wrap;
+      gap: 37px;
+    }
+    .frame-group {
+      gap: 113px;
+    }
+    .contact-wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+      box-sizing: border-box;
+    }
+    .frame-parent {
+      gap: 139px;
+    }
+    .frame-div {
+      flex-wrap: wrap;
+    }
+    .copyright-interno-designed-wrapper {
+      padding-left: 49px;
+      box-sizing: border-box;
+    }
+    .frame-container {
+      gap: 87px;
+    }
+    .line-parent {
+      gap: 179px;
+      padding-top: 23px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
+    .background,
+    .banner {
+      padding-left: 62px;
+      padding-right: 62px;
+      box-sizing: border-box;
+    }
+    .background {
+      padding-left: 106px;
+      padding-right: 106px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .home-parent,
+    .work {
+      box-sizing: border-box;
+    }
+    .home-parent {
+      padding-bottom: 422px;
+    }
+    .work {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+    .we-create-the-container {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .sub-content2 {
+      gap: 16px;
+    }
+    .content {
+      gap: 22px;
+    }
+    .about-us1 {
+      gap: 19px;
+    }
+    .frame-group {
+      gap: 56px;
+    }
+    .read-our-articles {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .content1 {
+      gap: 16px;
+    }
+    .frame-parent {
+      gap: 70px;
+    }
+    .houseinsight {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .frame-parent1 {
+      flex-wrap: wrap;
+    }
+    .frame-container {
+      gap: 43px;
+    }
+    .houseinsight1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .line-parent {
+      gap: 89px;
+      padding-top: 20px;
+      box-sizing: border-box;
+    }
+    .we-help-to {
+      font-size: 42px;
+      line-height: 64px;
+    }
+    .background,
+    .banner {
+      padding-left: 31px;
+      padding-right: 31px;
+      box-sizing: border-box;
+    }
+    .background {
+      padding-left: 53px;
+      padding-right: 53px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .about-us,
+    .home,
+    .house-value,
+    .power-usage {
+      font-size: 19px;
+    }
+    .house-value1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .our-platform-use {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .div {
+      gap: 26px;
+    }
+    .power-usage1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .our-energy-usage {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .div1 {
+      gap: 26px;
+    }
+    .we-create-the-container {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    .houseinsights-is-here {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .frame-group {
+      gap: 28px;
+    }
+    .read-our-articles {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    .frame-parent {
+      gap: 35px;
+    }
+    .houseinsight {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .frame-parent1 {
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .pages {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .home-house-value-container {
+      font-size: 18px;
+      line-height: 53px;
+    }
+    .contact2 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .kampus-ancol-jl-container {
+      font-size: 18px;
+      line-height: 37px;
+    }
+    .copyright-interno {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .copyright-interno-designed-wrapper {
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+    .frame-container {
+      gap: 22px;
+    }
+    .houseinsight1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .line-parent {
+      gap: 45px;
+    }
+    .we-help-to {
+      font-size: 25px;
+      line-height: 42px;
+    }
+    .contact-us1 {
+      font-size: 19px;
+    }
+  }
+  
