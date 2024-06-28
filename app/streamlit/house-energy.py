@@ -2,7 +2,7 @@ import requests
 import subprocess
 import streamlit as st
 
-# Streamlit UI untuk input spesifikasi AC
+# Streamlit UI untuk input spesifikasi perangkat elektronik
 def streamlit_ui():
     st.set_page_config(page_title='Prediksi Konsumsi Listrik Rumah', page_icon=':electric_plug:')
     
@@ -64,8 +64,49 @@ def streamlit_ui():
             except requests.exceptions.RequestException as e:
                 st.error(f'Terdapat kesalahan dalam koneksi: {e}')
 
+    elif appliance_type == 'TV':
+        diagonal_size_inches = st.number_input('Ukuran Layar Diagonal (in.)', min_value=0.0)
+        resolution_format = st.selectbox('Format Resolusi', ['HD', 'Full HD', '4K', '8K'])
+        physical_ports = st.number_input('Jumlah Port Fisik yang Tersedia', min_value=0)
+        brand_name = st.text_input('Nama Brand')
+        display_type = st.selectbox('Tipe Display', ['LED', 'OLED', 'LCD', 'Plasma'])
+        backlight_technology = st.selectbox('Teknologi Backlight', ['Direct LED', 'Edge LED', 'Full Array LED', 'Local Dimming'])
+        high_contrast_ratio = st.selectbox('High Contrast Ratio Display', ['Yes', 'No'])
+        ethernet_supported = st.selectbox('Ethernet Supported', ['Yes', 'No'])
+        low_power_wireless_supported = st.selectbox('Low Power Wireless Technologies Supported', ['Yes', 'No'])
+        automatic_brightness_control = st.selectbox('Automatic Brightness Control', ['Yes', 'No'])
+        auto_brightness = st.selectbox('Auto Brightness', ['Yes', 'No'])
+
+        if st.button('Prediksi Konsumsi Listrik'):
+            input_data = {
+                "Diagonal Viewable Screen Size (in.)": [diagonal_size_inches],
+                "Resolution Format": [resolution_format],
+                "Physical Data Ports Available": [physical_ports],
+                "Brand Name": [brand_name],
+                "Display Type": [display_type],
+                "Backlight Technology Type": [backlight_technology],
+                "High Contrast Ratio (HCR) Display": [high_contrast_ratio],
+                "Ethernet Supported": [ethernet_supported],
+                "Low Power Wireless Technologies Supported": [low_power_wireless_supported],
+                "Automatic Brightness Control": [automatic_brightness_control],
+                "Auto Brightness": [auto_brightness],
+                "type": [appliance_type]
+            }
+            
+            try:
+                response = requests.post('http://127.0.0.1:5000/predict-ac', json=input_data)
+                
+                if response.status_code == 200:
+                    result = response.json()['result']
+                    st.success(f'Prediksi Konsumsi Listrik: {result} Kwh')
+                else:
+                    st.error('Error dalam melakukan prediksi. Silakan coba lagi.')
+            
+            except requests.exceptions.RequestException as e:
+                st.error(f'Terdapat kesalahan dalam koneksi: {e}')
+
     else:
-        st.warning('Fitur untuk perangkat selain AC belum tersedia.')
+        st.warning('Fitur untuk perangkat selain AC dan TV belum tersedia.')
 
 # Fungsi untuk menjalankan load_ac.py sebagai subproses
 def run_load_ac():

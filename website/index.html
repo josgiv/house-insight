@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400&display=swap"
     />
   </head>
+,s
   <body>
     <div class="homepage-2">
       <main class="background">
@@ -41,7 +42,7 @@
                         </div>
                       </div>
                       <div class="button">
-                        <div class="go-here">Go Here</div>
+                        <div class="go-here" id="goHere1">Go Here</div> <!-- Menambahkan id="goHere1" untuk identifikasi yang benar -->
                         <img
                           class="action-button-icons"
                           loading="lazy"
@@ -59,7 +60,7 @@
                         </div>
                       </div>
                       <div class="button1">
-                        <div class="go-here1">Go Here</div>
+                        <div class="go-here1" id="goHere2">Go Here</div> <!-- Menambahkan id="goHere2" untuk identifikasi yang benar -->
                         <img
                           class="vector-icon"
                           loading="lazy"
@@ -200,6 +201,20 @@
           window.location.href = "./about.html";
         });
       }
-      </script>
+      
+      var goHere1 = document.getElementById("goHere1");  // Mengganti 'go-here1' menjadi 'goHere1' karena identifier tidak boleh mengandung tanda '-'
+      if (goHere1) {
+        goHere1.addEventListener("click", function (e) {
+          window.location.href = "https://www.google.com";  // Mengubah link menjadi URL yang valid dengan menggunakan protokol lengkap
+        });
+      }
+
+      var goHere2 = document.getElementById("goHere2");  // Mengganti 'go-here1' menjadi 'goHere2' karena identifier tidak boleh mengandung tanda '-'
+      if (goHere2) {
+        goHere2.addEventListener("click", function (e) {
+          window.location.href = "https://www.google.com";  // Mengubah link menjadi URL yang valid dengan menggunakan protokol lengkap
+        });
+      }
+    </script>
   </body>
 </html>
