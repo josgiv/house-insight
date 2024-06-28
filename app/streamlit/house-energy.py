@@ -109,12 +109,18 @@ def streamlit_ui():
         st.warning('Fitur untuk perangkat selain AC dan TV belum tersedia.')
 
 # Fungsi untuk menjalankan load_ac.py sebagai subproses
+import subprocess
+
 def run_load_ac():
     # Path ke file load_ac.py
-    app_path = 'app\loader\load_ac.py'
+    app_path = r'app/loader/load_ac.py'
     
     # Menjalankan subprocess dengan Python
     subprocess.run(['python', app_path])
+
+# Memanggil fungsi untuk menjalankan file load_ac.py
+run_load_ac()
+
 
 # Main program untuk menjalankan aplikasi Streamlit
 if __name__ == '__main__':
