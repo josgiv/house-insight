@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # Load Dataset
-df = pd.read_csv(r'..\..\ML-preparation\Dataset\Harga-Rumah-Model.csv', delimiter=',')
+df = pd.read_csv('..\..\ML-preparation\Dataset\Harga-Rumah-Model.csv', delimiter=',')
 
 # Mapping sub-lokasi berdasarkan kota
 sub_lokasi_dict = {
