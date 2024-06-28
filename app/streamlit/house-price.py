@@ -3,8 +3,10 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-# Load Dataset
-df = pd.read_csv('..\\..\\ML-preparation\\Dataset\\Harga-Rumah-Model.csv', delimiter=',')
+import os
+
+file_path = os.path.abspath('../../ML-preparation/Dataset/Harga-Rumah-Model.csv')
+df = file_path
 
 
 # Mapping sub-lokasi berdasarkan kota
