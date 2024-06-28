@@ -10,9 +10,17 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import os
 
-# Menggunakan path relatif untuk file CSV
-file_path = 'streamlit/Harga-Rumah-Model.csv'
-df = pd.read_csv(file_path)
+base_path = os.path.dirname(__file__)
+# Path untuk file CSV
+csv_file_path = os.path.join(base_path, 'Harga-Rumah-Model.csv')
+
+# Load data CSV
+@st.cache(persist=True)
+def load_data(file_path):
+    return pd.read_csv(file_path)
+
+# Load data
+df = load_data(csv_file_path)
 
 
 # Mapping sub-lokasi berdasarkan kota
