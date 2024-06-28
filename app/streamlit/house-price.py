@@ -10,7 +10,8 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import os
 
-file_path = os.path.abspath('Harga-Rumah-Model.csv')
+base_path = os.path.dirname(__file__)  # Mengambil path direktori saat ini
+file_path = os.path.join(base_path, 'Harga-Rumah-Model.csv'),
 df = pd.read_csv(file_path)  # Read the CSV file into a dataframe
 
 # Mapping sub-lokasi berdasarkan kota
