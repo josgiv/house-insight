@@ -9,6 +9,15 @@ file_path = os.path.abspath('../../ML-preparation/Dataset/Harga-Rumah-Model.csv'
 df = file_path
 
 
+import streamlit as st
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import os
+
+file_path = os.path.abspath('../../ML-preparation/Dataset/Harga-Rumah-Model.csv')
+df = pd.read_csv(file_path)  # Read the CSV file into a dataframe
+
 # Mapping sub-lokasi berdasarkan kota
 sub_lokasi_dict = {
     'Jakarta': ['Jakarta Utara', 'Jakarta Barat', 'Jakarta Selatan', 'Jakarta Timur', 'Jakarta Pusat'],
