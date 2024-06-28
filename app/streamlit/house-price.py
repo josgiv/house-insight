@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 
 import os
 
-file_path = os.path.abspath('../../ML-preparation/Dataset/Harga-Rumah-Model.csv')
+file_path = os.path.abspath('Harga-Rumah-Model.csv')
 df = file_path
 
 
