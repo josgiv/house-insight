@@ -70,7 +70,7 @@ def streamlit_ui():
 # Fungsi untuk menjalankan load_ac.py sebagai subproses
 def run_load_ac():
     # Path ke file load_ac.py
-    app_path = '../loader/load_ac.py'
+    app_path = 'app\loader\load_ac.py'
     
     # Menjalankan subprocess dengan Python
     subprocess.run(['python', app_path])
