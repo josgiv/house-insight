@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 # Paths untuk model .pkl
 base_path = os.path.dirname(__file__)  # Mengambil path direktori saat ini
 model_paths = {
-    'air_conditioners': os.path.join(base_path, r'../app/models-pickle/house-energy/air-conditioners.pkl'),
+    'air_conditioners': os.path.join(base_path, 'air-conditioners.pkl'),
 }
 
 # Fungsi untuk memuat semua model
