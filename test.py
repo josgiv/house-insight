@@ -6,10 +6,7 @@ import os
 # Paths untuk model .pkl
 base_path = os.path.dirname(__file__)  # Mengambil path direktori saat ini
 model_paths = {
-    'air_cleaner': os.path.join(base_path, '../models-pickle/house-energy/air-cleaner.pkl'),
-    'air_conditioners': os.path.join(base_path, '../models-pickle/house-energy/air-conditioners.pkl'),
-    'refrigerators': os.path.join(base_path, '../models-pickle/house-energy/refrigerators.pkl'),
-    'televisions': os.path.join(base_path, '../models-pickle/house-energy/televisions.pkl'),
+    'air_conditioners': os.path.join(base_path, 'app/models-pickle/house-energy/air-conditioners.pkl'),
 }
 
 # Fungsi untuk memuat semua model
